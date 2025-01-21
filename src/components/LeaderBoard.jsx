@@ -1,7 +1,7 @@
 import './styleS/board.css';
 import Header from './Header';
 import React, { useState,useEffect } from 'react';
-const url='http://180.188.227.250:7070';
+const url='https://leaderboard-backend-production-54ff.up.railway.app';
 
 function Board(){  
     
