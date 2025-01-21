@@ -45,13 +45,21 @@ function Board(){
         e.preventDefault();
 
         if(newUserName.trim()){
-            const response = await fetch(`${url}/api/user/addUser/`, {
+            let response = await fetch(`${url}/api/user/addUser/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({name:newUserName})
             });
+
+            if(response.ok){
+                response=await response.json();
+                if(response.success){
+                    alert("User Added:"+response.uuid);
+                }
+            }
+
             setNewUserName('');
             setIsFormOpen(false);
 
