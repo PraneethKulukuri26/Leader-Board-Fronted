@@ -1,0 +1,40 @@
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(235, 200, 4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p{
+    color: rgb(73, 10, 15);
+    width: fit-content;
+    height: fit-content;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+button{
+    border: none;
+    margin-right: 20px;
+    height: 30px;
+    width: 80px;
+    background-color: green;
+    color: white;
+    font-weight: 900;
+}
+
+button:hover{
+    background-color: rgb(2, 75, 2);
+    cursor: pointer;
+}
+
+.header input{
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
